@@ -2,7 +2,7 @@ package i_introduction._1_Java_To_Kotlin_Converter
 
 import util.TODO
 
-fun todoTasks1(collection: Collection<Int>): String {
+fun todoTask1(collection: Collection<Int>): String {
 //    """
 //        Task 1.
 //        Rewrite JavaCode1.task1 in Kotlin.
@@ -25,6 +25,6 @@ fun todoTasks1(collection: Collection<Int>): String {
 }
 
 
-fun tasks1(collection: Collection<Int>): String {
-    return todoTasks1(collection)
+fun task1(collection: Collection<Int>): String {
+    return todoTask1(collection)
 }
