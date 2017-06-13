@@ -12,7 +12,7 @@ fun usage() {
     bar(1, b = false)
 }
 
-fun todoTask2(): Nothing = TODO(
+fun todoTask2(collection: Collection<Int>): Nothing = TODO(
     """
         Task 2.
         Implement the same logic as in 'task1' again through the library method 'joinToString()'.
@@ -22,6 +22,9 @@ fun todoTask2(): Nothing = TODO(
     references = { collection: Collection<Int> -> task1(collection); collection.joinToString() })
 
 fun task2(collection: Collection<Int>): String {
-    todoTask2()
-    return collection.joinToString()
+    //todoTask2(collection)
+    //    val début = "{";
+    //    val fin = "}";
+    //    return collection.joinToString(début = "{", fin = "}")
+    return collection.joinToString(prefix = "{", postfix = "}")
 }
